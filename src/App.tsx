@@ -97,7 +97,7 @@ function App() {
       <div className="bg-black/30 backdrop-blur-sm border-b border-orange-500/20">
         <div className="container mx-auto px-4 py-6">
           <h1 className="text-4xl font-bold text-center bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
-            🔥 UNBANNED UID FREE FIRE [BY THUG] 🔥
+            🔥 UNBANNED UID FREE FIRE [BY TANVIR] 🔥
          
           </h1>
           <p className="text-center text-gray-300 mt-2">Vérifiez le statut de votre compte Free Fire</p>
@@ -115,7 +115,7 @@ function App() {
                   value={uid}
                   onChange={(e) => setUid(e.target.value)}
                   onKeyPress={handleKeyPress}
-                  placeholder="Entrez votre UID Free Fire..."
+                  placeholder="Enter Your UID Free Fire..."
                   className="w-full px-4 py-3 bg-gray-800/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all"
                 />
               </div>
@@ -129,7 +129,7 @@ function App() {
                 ) : (
                   <Search className="w-5 h-5" />
                 )}
-                {loading ? 'Recherche...' : 'Rechercher'}
+                {loading ? 'Search...' : 'Search'}
               </button>
             </div>
           </div>
@@ -209,9 +209,9 @@ function App() {
                         <CheckCircle className="w-10 h-10 text-green-400" />
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-green-400 mb-2">✅ COMPTE SAIN</h4>
+                        <h4 className="text-2xl font-bold text-green-400 mb-2">✅ SECURE ACCOUNT</h4>
                         <p className="text-gray-300">Votre compte n'est pas banni</p>
-                        <p className="text-sm text-gray-400 mt-2">Vous pouvez jouer normalement</p>
+                        <p className="text-sm text-gray-400 mt-2">This account is not banned and can play normally</p>
                       </div>
                     </div>
                   ) : (
@@ -220,8 +220,9 @@ function App() {
                         <ShieldAlert className="w-10 h-10 text-red-400" />
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-red-400 mb-2">🚫 COMPTE BANNI</h4>
-                        <p className="text-gray-300">Votre compte est actuellement banni</p>
+                        <h4 className="text-2xl font-bold text-red-400 mb-2">🚫 ACCOUNT BANNED
+</h4>
+                        <p className="text-gray-300">This account is currently suspended</p>
                         {playerData.banInfo.period > 0 && (
                           // <p className="text-sm text-gray-400 mt-2">Période: {playerData.banInfo.period} jours</p>
                         )}
@@ -256,7 +257,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-black/50 backdrop-blur-sm border-t border-orange-500/20 mt-16">
         <div className="container mx-auto px-4 py-6 text-center text-gray-400">
-          <p>&copy; 2025 UNBANNED UID BY THUG</p>
+          <p>&copy; 2025 UNBANNED UID BY TANVIR</p>
         </div>
       </footer>
     </div>
